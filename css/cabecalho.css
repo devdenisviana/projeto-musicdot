@@ -15,6 +15,9 @@
 
 .cabecalho_menu {
     background-color: #272B3A87;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .cabecalho_item-menu {
