@@ -1,19 +1,27 @@
 .rodape {
     text-align: center;
     font-size: 0.7rem;
+    padding: 2em 5%;
 }
 
 .rodape_logo {
     width: 11.25em;
+    margin-bottom: 1em;
 }
 
 .rodape_lista-midias-sociais {
     display: flex;
     justify-content: center;
+    margin-top: 1em;
 }
 
 .rodape_item-midias-sociais {
     width: 2.62em;
+    margin: 0.25em;
+}
+
+.rodape_infos-empresa {
+    line-height: 1.5;
 }
 
 .rodape_item-midias-sociais img {
@@ -24,8 +32,44 @@
     font-size: 1.45em;
     font-weight: bold;
     text-transform: uppercase;
+    margin-bottom: 1em;
 }
 
 .rodape_item-lista {
     font-weight: 500;
+    margin: 0.625em 0;
+}
+
+@media (max-width: 640px) {
+    .rodape_secao + .rodape_secao{
+        margin-top: 2em;
+    }
+}
+
+@media (min-width: 640px) {
+    .rodape {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-size: 1rem;
+    }
+    .rodape_secao--sobre, .rodape_secao--cursos, .rodape_secao--links, .rodape_secao--newsletter {
+        width: 45%;
+    }
+    .rodape_secao--cursos {
+        order: 1;
+        margin: 0;
+    }
+    .rodape_secao--links {
+        order: 2;
+        margin: 0;
+    }
+    .rodape_secao--sobre {
+        order: 3;
+        margin-top: 2em;
+    }
+    .rodape_secao--newsletter {
+        order: 4;
+        margin-top: 2em;
+    }
 }
