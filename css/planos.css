@@ -1,0 +1,21 @@
+.planos	{
+    background-image:	url(../img/planos-background-mobile.png);
+    background-size:	cover;
+    background-repeat:	no-repeat;
+    text-align:	center;
+    padding-top:	15px;
+    padding-bottom:	1.8rem;
+    display:	grid;
+    justify-items:	center;
+    position:	relative;
+}
+.planos::before	{
+   content:	"";				
+   width:	81%;
+   height:	.1rem;
+   background-color:	#e93d50;
+   position:	absolute;
+   top:	0;
+   left:	50%;
+}
+
